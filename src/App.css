@@ -1,6 +1,7 @@
 .App {
   display: flex;
   font-family: 'Arial', sans-serif;
+  height: 100vh;
 }
 
 .main-content {

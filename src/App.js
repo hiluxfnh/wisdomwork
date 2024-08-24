@@ -15,9 +15,13 @@ function App() {
                 <Header />
                 <DashboardStats />
                 <div className="dashboard-content">
-                    <StudentsTable />
-                    <PerformanceChart />
-                    <CoursesUploaded />
+                    <div className="students-table">
+                        <StudentsTable />
+                    </div>
+                    <div className="students-tablea">
+                        <PerformanceChart />
+                        <CoursesUploaded />
+                    </div>
                 </div>
             </div>
         </div>

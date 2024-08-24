@@ -1,13 +1,13 @@
 .dashboard-stats {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    width: 75%;
+    margin-top: 15px;
+    width: 70%;
 }
 
 .stat-card {
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px;
     flex: 1;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .stat-card:last-child {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .purple {
@@ -32,18 +32,30 @@
 }
 
 .icons {
-    width: 40px;
-    /* height: 40px; */
-    margin-right: 20px;
+    width: 30px;
+    margin-right: 9px;
+    margin-left: 15px;
+}
+
+.divider {
+    height: 50px; /* Adjust height to match icon size */
+    width: 1px;
+    background-color: #ccc; /* Light gray color for the line */
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.details {
+    flex: 1;
 }
 
 .details h2 {
     margin: 0;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .details p {
     margin: 5px 0 0;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }

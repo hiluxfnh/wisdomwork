@@ -2,19 +2,41 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); */
     margin-bottom: 20px;
+    /* width: 100%; */
+    margin: 0 auto;
 }
 
 .students-table h2 {
-    margin: 0 0 10px;
-    font-size: 18px;
+    margin: 0;
+    font-size: 24px;
     color: #333;
 }
 
-.students-table p {
-    margin: 0 0 20px;
-    color: #888;
+.students-table .active-members {
+    margin: 5px 0 10px;
+    color: #28A745; /* Green color */
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #bbb;
 }
 
 .students-table table {
@@ -25,20 +47,32 @@
 .students-table th,
 .students-table td {
     text-align: left;
-    padding: 12px;
+    padding: 10px;
     border-bottom: 1px solid #eee;
 }
 
 .students-table th {
-    background-color: #f29225;
-    color: white;
+    color: #A9A9A9; /* Light gray for headers */
+    font-weight: normal;
+    font-size: 12px;
 }
 
-.students-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+.students-table td {
+    font-size: 14px;
+    color: #333;
 }
 
 .students-table tr:hover {
-    background-color: #f1f1f1;
+    background-color: #f5f5f5;
     cursor: pointer;
+}
+
+.students-table tr:last-child td {
+    border-bottom: none; /* Remove bottom border from the last row */
+}
+
+.students-table-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
