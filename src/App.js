@@ -1,25 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+import DashboardStats from './components/DashboardStats';
+import StudentsTable from './components/StudentsTable';
+import PerformanceChart from './components/PerformanceChart';
+import CoursesUploaded from './components/CoursesUploaded';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Sidebar />
+            <div className="main-content">
+                <Header />
+                <DashboardStats />
+                <div className="dashboard-content">
+                    <StudentsTable />
+                    <PerformanceChart />
+                    <CoursesUploaded />
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;

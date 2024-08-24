@@ -1,0 +1,103 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.greeting {
+    display: flex;
+    align-items: center; /* Aligns the wave icon and text vertically */
+}
+
+.greeting-text {
+    display: flex;
+    flex-direction: column; /* Stacks the text vertically */
+    margin-left: 10px; /* Adds space between the wave icon and text */
+}
+
+.greeting-text h1 {
+    margin: 0; /* Removes default margin for the h1 */
+    font-size: 17px; /* Adjust font size as needed */
+}
+
+.greeting-text p {
+    margin: 0;
+    font-size: 15px; /* Adjust font size as needed */
+    color: #f29225; /* Optional: set the text color */
+    font-weight: 600; /* Optional: set the font weight */
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 20px;
+    
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 10px solid #F4F7FC;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 60px; /* Adjust padding to make space for the search icon */
+}
+
+.search-btn {
+    position: absolute;
+    left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.profile-settings {
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    background-color: #F4F7FC;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.profile-btn {
+    /* width: 20px; */
+    /* height: 30px; */
+    background: none;
+    border: none;
+    /* border-radius: 50%; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-right: 50px; */
+}
+
+.dasboard-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.dasboard-dots{
+    background-color: #FFC159;
+    border-radius: 10px;
+    padding: 7px 10px 10px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

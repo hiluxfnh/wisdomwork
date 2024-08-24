@@ -1,0 +1,36 @@
+.performance-chart {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.performance-chart h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bar {
+    width: 20%;
+    background-color: #f29225;
+    border-radius: 5px;
+}
+
+.bar.last-month {
+    height: 60px;
+}
+
+.bar.present-month {
+    height: 80px;
+}
+
+.bar.average {
+    height: 40px;
+}

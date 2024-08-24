@@ -1,0 +1,49 @@
+.dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 75%;
+}
+
+.stat-card {
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #000;
+}
+
+.stat-card:last-child {
+    margin-right: 0;
+}
+
+.purple {
+    background: linear-gradient(to right, #5C4E8E 5%, white 0%);
+}
+
+.black {
+    background: linear-gradient(to right, #000 5%, white 0%);
+}
+
+.yellow {
+    background: linear-gradient(to right, #FFC159 5%, white 0%);
+}
+
+.icons {
+    width: 40px;
+    /* height: 40px; */
+    margin-right: 20px;
+}
+
+.details h2 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.details p {
+    margin: 5px 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
