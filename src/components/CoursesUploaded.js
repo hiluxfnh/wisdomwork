@@ -10,11 +10,12 @@ const CoursesUploaded = () => {
                 <img src={picture} alt="Graphic Design" />
                 <div className="course-info">
                     <div className="course-tags">
-                        <h5>GRAPHIC DESIGN</h5> <h5>UI/UX DESIGN</h5>
+                        <h5 className='light-pink-this'>GRAPHIC DESIGN</h5> <h5 className='light-blue-this'>UI/UX DESIGN</h5>
                     </div>
                     <div className="course-head">
                         <div className="course-description">
-                            <p><span>Graphics Design: </span>Where professionals create visual content to communicate messages.</p>
+                            <p><span className="bold-this">Graphics Design: </span>Where professionals create visual content to communicate messages.</p>
+                            <p>⭐14-12-2024</p>
                         </div>
                         <div className="course-data">
                             <button className="edit-btn">EDIT</button>

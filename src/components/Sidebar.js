@@ -12,9 +12,9 @@ import location from '../images/location.svg';
 import logout from '../images/logout.svg';
 import settingTwo from '../images/setting-two.svg';
 import profilePic from '../images/profile.jpg';
-import back from '../images/back.svg'; // Add your close icon here
+import back from '../images/back.svg';
 
-const Sidebar = () => {
+const Sidebar = ({ activePage, setActiveDashboard }) => {
     return (
         <div className="sidebar">
             <div className="logo">
@@ -22,13 +22,48 @@ const Sidebar = () => {
             </div>
             <nav>
                 <ul>
-                    <li className="active"> <img src={gradCap} alt="Graduation Cap" className="icon" /> Dashboard</li>
-                    <li> <img src={calendar} alt="Calendar" className="icon" />Courses Dashboard</li>
-                    <li> <img src={Folder} alt="Folder" className="icon" /> Projects Dashboard</li>
-                    <li> <img src={circleSeven} alt="circleSeven" className="icon" /> Assessment Dashboard</li>
-                    <li> <img src={Bag} alt="Bag" className="icon" /> Job Dashboard</li>
-                    <li> <img src={medal} alt="medal" className="icon" /> Student Dashboard</li>
-                    <li> <img src={blog} alt="blog" className="icon" /> Blogs Dashboard</li>
+                    <li
+                        onClick={() => setActiveDashboard('dashboard')}
+                        className={`nav-item ${activePage === 'dashboard' ? 'active' : ''}`}
+                    >
+                        <img src={gradCap} alt="Graduation Cap" className="icon" /> Dashboard
+                    </li>
+                    <li
+                        onClick={() => setActiveDashboard('courses')}
+                        className={`nav-item ${activePage === 'courses' ? 'active' : ''}`}
+                    >
+                        <img src={calendar} alt="Calendar" className="icon" /> Courses Dashboard
+                    </li>
+                    <li
+                        onClick={() => setActiveDashboard('projects')}
+                        className={`nav-item ${activePage === 'projects' ? 'active' : ''}`}
+                    >
+                        <img src={Folder} alt="Folder" className="icon" /> Projects Dashboard
+                    </li>
+                    <li
+                        onClick={() => setActiveDashboard('assessment')}
+                        className={`nav-item ${activePage === 'assessment' ? 'active' : ''}`}
+                    >
+                        <img src={circleSeven} alt="circleSeven" className="icon" /> Assessment Dashboard
+                    </li>
+                    <li
+                        onClick={() => setActiveDashboard('jobs')}
+                        className={`nav-item ${activePage === 'jobs' ? 'active' : ''}`}
+                    >
+                        <img src={Bag} alt="Bag" className="icon" /> Job Dashboard
+                    </li>
+                    <li
+                        onClick={() => setActiveDashboard('students')}
+                        className={`nav-item ${activePage === 'students' ? 'active' : ''}`}
+                    >
+                        <img src={medal} alt="medal" className="icon" /> Student Dashboard
+                    </li>
+                    <li
+                        onClick={() => setActiveDashboard('blogs')}
+                        className={`nav-item ${activePage === 'blogs' ? 'active' : ''}`}
+                    >
+                        <img src={blog} alt="blog" className="icon" /> Blogs Dashboard
+                    </li>
                 </ul>
                 <hr className='hr-line'/>
             </nav>
@@ -59,7 +94,6 @@ const Sidebar = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
