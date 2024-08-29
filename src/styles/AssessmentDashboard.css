@@ -1,0 +1,83 @@
+.dashboard-container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.stats-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.total-assessments {
+    background: #fef6e4;
+    color: #ff9100;
+}
+
+.pending-assessments {
+    background: #fde8e8;
+    color: #ff5e5e;
+}
+
+.completed-assessments {
+    background: #e8f5e9;
+    color: #4caf50;
+}
+
+.students-list {
+    margin-top: 20px;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.active-members {
+    color: #00bfa5;
+}
+
+.search-input {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.students-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.students-table th,
+.students-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.status {
+    padding: 6px 12px;
+    border-radius: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.submitted {
+    background-color: #4caf50;
+}
+
+.pending {
+    background-color: #ff5e5e;
+}
