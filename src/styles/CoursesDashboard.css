@@ -1,0 +1,48 @@
+/* CoursesDashboard.css */
+
+.courses-dashboard {
+    padding: 20px;
+    /* background-color: #f9f9f9; */
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px;
+}
+
+/* Ensures that when there are fewer than 3 courses in a row, they are still centered */
+@media screen and (max-width: 900px) {
+    .courses-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+.add-new-course {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+}
+
+.add-course-icon {
+    font-size: 50px;
+    color: #666;
+}
+
+.new-course-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f29225;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.new-course-button:hover {
+    background-color: #fab76a;
+}
