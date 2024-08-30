@@ -1,5 +1,5 @@
 .dashboard-container {
-    padding: 20px;
+    padding: 10px;
     font-family: 'Arial', sans-serif;
 }
 
@@ -15,7 +15,7 @@
     border-radius: 8px;
     text-align: center;
     flex: 1;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
 }
 
 .total-assessments {
@@ -35,6 +35,8 @@
 
 .students-list {
     margin-top: 20px;
+    background: #fff;
+    padding: 20px;
 }
 
 .list-header {
@@ -46,6 +48,8 @@
 
 .active-members {
     color: #00bfa5;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 .search-input {
@@ -67,17 +71,31 @@
     border-bottom: 1px solid #ddd;
 }
 
+.students-table td {
+    font-size: 13px;
+}
+
 .status {
     padding: 6px 12px;
-    border-radius: 12px;
+    border-radius: 5px;
     color: #fff;
     text-align: center;
 }
 
+.search-icon{
+    cursor: pointer;
+}
+
+.search-barss{
+    border: 1px solid #e6e1e1;
+}
+
 .submitted {
-    background-color: #4caf50;
+    background-color: #16C098;
+    border: 1px solid #008767;
 }
 
 .pending {
     background-color: #ff5e5e;
+    border: 1px solid #DF0404;
 }

@@ -1,12 +1,12 @@
 // AssessmentDashboard.js
 import React from 'react';
 import '../styles/AssessmentDashboard.css'; // Make sure to create this CSS file
+import loop from '../images/search.svg';
 
 const AssessmentDashboard = () => {
     return (
         <div className="dashboard-container">
-            <h2>Assessment Dashboard</h2>
-            
+            {/* <h2>Assessment Dashboard</h2> */}
             <div className="stats-cards">
                 <div className="card total-assessments">
                     <p>Total Assessments</p>
@@ -24,9 +24,18 @@ const AssessmentDashboard = () => {
 
             <div className="students-list">
                 <div className="list-header">
-                    <h3>All Students</h3>
-                    <p className="active-members">Active Members</p>
-                    <input type="text" placeholder="Search" className="search-input" />
+                    <div className="list-header-all">
+                        <div className="list-header-tudents">
+                            <h3>All Students</h3>
+                        </div>
+                        <div className="list-header-members">
+                            <p className="active-members">Active Members</p>
+                        </div>
+                    </div>
+                    <div className="search-bars search-barss">
+                        <img src={loop} alt="Search" className="search-icon" />
+                        <input type="text" placeholder="Search" />
+                    </div>
                 </div>
                 <table className="students-table">
                     <thead>
